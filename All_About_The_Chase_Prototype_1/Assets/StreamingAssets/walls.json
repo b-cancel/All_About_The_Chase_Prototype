@@ -1,0 +1,72 @@
+{
+  "wallTypes": [
+    {
+      "wallObjectName": "UNBREAKABLE_WALL",
+      "wallList": [
+        {
+          "point1": [ 8.5, 2.5 ],
+          "point2": [ 8.5, 5.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 8.5, 5.5 ],
+          "point2": [ 11.5, 5.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 5.5, 2.5 ],
+          "point2": [ 5.5, 5.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 5.5, 5.5 ],
+          "point2": [ 2.5, 5.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 2.5, 8.5 ],
+          "point2": [ 5.5, 8.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 5.5, 8.5 ],
+          "point2": [ 5.5, 11.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 8.5, 5.5 ],
+          "point2": [ 11.5, 5.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 8.5, 11.5 ],
+          "point2": [ 8.5, 8.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        },
+        {
+          "point1": [ 8.5, 8.5 ],
+          "point2": [11.5, 8.5 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "flip": 0
+        }
+      ]
+    }
+  ]
+}

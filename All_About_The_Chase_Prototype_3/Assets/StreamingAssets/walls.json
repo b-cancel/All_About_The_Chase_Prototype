@@ -1,0 +1,188 @@
+{
+  "wallTypes": [
+    {
+      "objectName": "UNBREAKABLE_WALL",
+      "list": [
+        {
+          "bottomLeft": [ 3, 5 ],
+          "topRight": [5, 3 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 9, 5 ],
+          "topRight": [11, 3 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 15, 5 ],
+          "topRight": [17, 3 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        }
+		,
+        {	
+          "bottomLeft": [ 21, 5 ],
+          "topRight": [23, 3 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 27, 5 ],
+          "topRight": [29, 3 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+		{
+          "bottomLeft": [ 3, 11 ],
+          "topRight": [5, 9 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 9, 11 ],
+          "topRight": [11, 9 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 15, 11 ],
+          "topRight": [17, 9 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        }
+		,
+        {	
+          "bottomLeft": [ 21, 11 ],
+          "topRight": [23, 9 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 27, 11 ],
+          "topRight": [29, 9 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+		{
+          "bottomLeft": [ 3, 17 ],
+          "topRight": [5, 15 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 9, 17 ],
+          "topRight": [11, 15 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 15, 17 ],
+          "topRight": [17, 15 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        }
+		,
+        {	
+          "bottomLeft": [ 21, 17 ],
+          "topRight": [23, 15 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 27, 17 ],
+          "topRight": [29, 15 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+		{
+          "bottomLeft": [ 3, 23 ],
+          "topRight": [5, 21 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 9, 23 ],
+          "topRight": [11, 21 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 15, 23 ],
+          "topRight": [17, 21 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        }
+		,
+        {	
+          "bottomLeft": [ 21, 23 ],
+          "topRight": [23, 21 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 27, 23 ],
+          "topRight": [29, 21 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+		{
+          "bottomLeft": [ 3, 29 ],
+          "topRight": [5, 27 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 9, 29 ],
+          "topRight": [11, 27 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 15, 29 ],
+          "topRight": [17, 27 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 21, 29 ],
+          "topRight": [23, 27 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        },
+        {	
+          "bottomLeft": [ 27, 29 ],
+          "topRight": [29, 27 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "direction": 1
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "floorTypes": [
+    {
+      "floorObjectName": "TILE",
+      "floorList": [
+      ]
+    },
+    {
+      "floorObjectName": "CARPET",
+      "floorList": [
+        {
+          "cornerTile1": [ 0, 0 ],
+          "cornerTile2": [ 14, 14 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "effect": "TURN"
+        },
+        {
+          "cornerTile1": [ 6, 11 ],
+          "cornerTile2": [ 8, 9 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "effect": "DODGE"
+        },
+        {
+          "cornerTile1": [ 9, 8 ],
+          "cornerTile2": [ 11, 6 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "effect": "DODGE"
+        },
+        {
+          "cornerTile1": [ 3, 8 ],
+          "cornerTile2": [ 5, 6 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "effect": "DODGE"
+        },
+        {
+          "cornerTile1": [ 6, 5 ],
+          "cornerTile2": [ 8, 3 ],
+          "tint": [ 0, 0, 0 ],
+          "layer": -1,
+          "effect": "DODGE"
+        }
+      ] 
+    },
+    {
+      "floorObjectName": "WOOD",
+      "floorList": [
+      ] 
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "floorTypes": [
+    {
+      "objectName": "TILE",
+      "list": [
+        {
+          "bottomLeft": [ 0, 0 ],
+          "topRight": [ 0, 0 ],
+          "actionID": 0,
+          "tint": [ 0, 0, 0 ],
+          "layer": -1
+        }
+      ]
+    },
+    {
+      "objectName": "CARPET",
+      "list": [
+		  {
+          "bottomLeft": [ 0, 35 ],
+          "topRight": [ 35, 0 ],
+          "actionID":  0,
+          "tint": [ 0, 0, 0 ],
+          "layer":  -1
+        }
+      ] 
+    },
+    {
+      "objectName": "WOOD",
+      "list": [
+        {
+          "bottomLeft": [ 0, 0 ],
+          "topRight": [ 0, 0 ],
+          "actionID": 0,
+          "tint": [ 0, 0, 0 ],
+          "layer": -1
+        }
+      ] 
+    }
+  ]
+}
