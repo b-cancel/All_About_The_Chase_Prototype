@@ -3,6 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
-public class AllFloorsTypes{
+public class AllFloorTypes{
     public FloorTypes[] floorTypes;
 }

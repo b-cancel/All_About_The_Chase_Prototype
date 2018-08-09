@@ -5,13 +5,13 @@ using UnityEngine;
 [System.Serializable]
 public class WallData{
     //position coordinates
-    public int[] bottomLeft;
-    public int[] topRight;
-
-    //extra wall details
-    public bool flip;
+    public float[] point1;
+    public float[] point2;
 
     //visual variables
     public int[] tint;
     public int layer;
+
+    //extra wall details
+    public bool flip;
 }

@@ -4,6 +4,6 @@ using UnityEngine;
 
 [System.Serializable]
 public class WallTypes{
-    public string typeName;
-    public WallData[] wallData;
+    public string wallObjectName;
+    public WallData[] wallList;
 }

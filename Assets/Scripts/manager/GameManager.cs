@@ -7,37 +7,24 @@ using UnityEngine;
 namespace game
 {
     public enum endState { win, lossTime, lossCrash };
-    public enum action { none, turn, dodge };
-
-    public class tileMapping
-    {
-        public Dictionary<Vector2, action> tileActions;
-
-        //---constructors
-
-        public tileMapping()
-        {
-            tileActions = new Dictionary<Vector2, action>();
-            tileActions.Add(Vector2.up, action.turn); //n
-            tileActions.Add(Vector2.right, action.turn); //e
-            tileActions.Add(Vector2.down, action.turn); //s
-            tileActions.Add(Vector2.left, action.turn); //w
-        }
-    }
 
     public class GameManager : MonoBehaviour
     {
+        public GameObject map;
+
         public GameObject Timer;
         public float totalTime;
         public float timeLeft;
 
-        private void Start()
+        void Awake()
         {
-            totalTime = 1000f;
+            map.GetComponent<EnvironManager>().CreateMap();
+
+            totalTime = 100000; //TODO... change this to something less ridiculous
             timeLeft = totalTime;
         }
 
-        private void Update()
+        void Update()
         {
             runTimer();
         }

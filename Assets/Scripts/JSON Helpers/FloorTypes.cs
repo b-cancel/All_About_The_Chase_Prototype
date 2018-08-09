@@ -4,6 +4,6 @@ using UnityEngine;
 
 [System.Serializable]
 public class FloorTypes {
-    public string typeName;
-    public FloorData[] floorData;
+    public string floorObjectName;
+    public FloorData[] floorList;
 }
