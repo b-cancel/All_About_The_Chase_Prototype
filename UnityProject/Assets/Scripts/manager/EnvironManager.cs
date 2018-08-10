@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Networking;
 using System.IO;
 using pairingKit;
 
@@ -41,7 +42,7 @@ namespace game
     {
         //-----where we store our json files for the TEST map
 
-        string defaultJSON = "./Assets/StreamingAssets/";
+        string defaultJSON;
 
         //-----prefab references
 
@@ -71,7 +72,7 @@ namespace game
         public Dictionary<byte, sbyte[]> dirID_2_dir;
 
         // Use this for initialization
-        public void CreateMap()
+        public IEnumerator CreateMap()
         {
             //NOTE: secondary var then primary vars
 
@@ -103,9 +104,9 @@ namespace game
             vector2ToWallCorner = new Dictionary<Vector2, GameObject>();
 
             //---read in JSON files
-
-            readFloors();
-            readWalls();
+            defaultJSON = Application.streamingAssetsPath;
+            yield return readFloors();
+            yield return readWalls();
         }
 
         string getJsonStringFromFile(string filePath)
@@ -186,7 +187,7 @@ namespace game
 
         //-------------------------Reading in Data
 
-        void readFloors()
+        IEnumerator readFloors()
         {
             //mapping to make reading in effect from JSON easier
             Dictionary<string, tileAction> string_2_TileAction = new Dictionary<string, tileAction>();
@@ -204,7 +205,20 @@ namespace game
             GameObject floorFolder = new GameObject("Floors");
             floorFolder.transform.parent = this.transform;
 
-            AllFloorTypes allFloorTiles = JsonUtility.FromJson<AllFloorTypes>(getJsonStringFromFile(defaultJSON + "floors.json"));
+            //read in the json file
+            string floorFilePath = System.IO.Path.Combine(Application.streamingAssetsPath, "floors.json");
+            string floorFile;
+
+            if (floorFilePath.Contains("://"))
+            {
+                UnityEngine.Networking.UnityWebRequest www = UnityEngine.Networking.UnityWebRequest.Get(floorFilePath);
+                yield return www.SendWebRequest();
+                floorFile = www.downloadHandler.text;
+            }
+            else
+                floorFile = getJsonStringFromFile(floorFilePath);
+
+            AllFloorTypes allFloorTiles = JsonUtility.FromJson<AllFloorTypes>(floorFile);
 
             foreach (FloorTypes aType in allFloorTiles.floorTypes) //loop all different floor types
             {
@@ -260,7 +274,7 @@ namespace game
             }
         }
 
-        void readWalls()
+        IEnumerator readWalls()
         {
             GameObject wallFolder = new GameObject("Walls");
             wallFolder.transform.parent = this.transform;
@@ -268,7 +282,19 @@ namespace game
             GameObject cornerFolder = new GameObject("Corners");
             cornerFolder.transform.parent = this.transform;
 
-            AllWallTypes allWallTiles = JsonUtility.FromJson<AllWallTypes>(getJsonStringFromFile(defaultJSON + "walls.json"));
+            string wallFilePath = System.IO.Path.Combine(Application.streamingAssetsPath, "walls.json");
+            string wallFile;
+
+            if (wallFilePath.Contains("://"))
+            {
+                UnityEngine.Networking.UnityWebRequest www = UnityEngine.Networking.UnityWebRequest.Get(wallFilePath);
+                yield return www.SendWebRequest();
+                wallFile = www.downloadHandler.text;
+            }
+            else
+                wallFile = getJsonStringFromFile(wallFilePath);
+
+            AllWallTypes allWallTiles = JsonUtility.FromJson<AllWallTypes>(wallFile);
 
             //read in the walls from our json file (from prefabs our walls should be set)
             foreach (WallTypes aType in allWallTiles.wallTypes) //for each type of wall

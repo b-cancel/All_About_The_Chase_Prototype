@@ -18,10 +18,10 @@ namespace game
 
         void Awake()
         {
-            map.GetComponent<EnvironManager>().CreateMap();
-
             totalTime = 100000; //TODO... change this to something less ridiculous
             timeLeft = totalTime;
+
+            StartCoroutine(map.GetComponent<EnvironManager>().CreateMap());
         }
 
         void Update()

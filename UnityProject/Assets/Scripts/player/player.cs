@@ -73,10 +73,7 @@ namespace game
 
             forwardMeansDeath = false;
 
-            //---ruling tile variables
-
-            //DEFAULT tile (this will be immediately overwritten BUT is required to avoid NULL errors)
-            dir_2_Action = Camera.main.GetComponent<GameManager>().map.GetComponent<EnvironManager>().tileAction_2_DefaultMapping[tileAction.allwaysTurnTEST].tileActions; 
+            dir_2_Action = Camera.main.GetComponent<GameManager>().map.GetComponent<EnvironManager>().tileAction_2_DefaultMapping[tileAction.allwaysTurnTEST].tileActions;
             newRulingTile(vect_2_arr(gameObject.transform.position), true, true);
         }
 
